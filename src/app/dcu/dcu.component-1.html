@@ -5,7 +5,7 @@
                 <div class="card shadow-lg o-hidden border-0 my-5">
                     <div class="card-body p-0">
                         <app-header></app-header>
-                        <form [formGroup]="dcuForm" (ngSubmit)="onSubmit()">
+                        <form [formGroup]="dcuForm" (ngSubmit)="onSubmit(dcuForm.value)">
                             <div class="row"
                                 style="margin-left: 16px;margin-right: 16px;margin-top: 0px;margin-bottom: 64px;">
                                 <div class="col-lg-12">
